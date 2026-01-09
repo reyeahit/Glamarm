@@ -8,13 +8,23 @@ let package = Package(
         .macOS(.v11)
     ],
     products: [
-        .library(name: "GlamarmRobotSDK", targets: ["GlamarmRobotSDK"])
+        .library(name: "GlamarmRobotSDK", targets: ["GlamarmRobotSDK", "GlamarmRobotSDKDependencies"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/robbiehanson/CocoaAsyncSocket.git", from: "7.6.5")
     ],
     targets: [
         .binaryTarget(
             name: "GlamarmRobotSDK",
             url: "https://github.com/reyeahit/Glamarm/releases/download/v1.0.0/GlamarmRobotSDK.xcframework.zip",
             checksum: "3845dcb080b3b4e8f2db0ae48bbcdd5c209cd6fa6fece6ea6136f50b22fb51f5"
+        ),
+        .target(
+            name: "GlamarmRobotSDKDependencies",
+            dependencies: [
+                .product(name: "CocoaAsyncSocket", package: "CocoaAsyncSocket")
+            ],
+            path: "Sources/GlamarmRobotSDKDependencies"
         )
     ]
 )
