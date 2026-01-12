@@ -16,8 +16,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "GlamarmRobotSDK",
-            url: "https://github.com/reyeahit/Glamarm/releases/download/v1.0.8/GlamarmRobotSDK.xcframework.zip",
-            checksum: "b129ed58f86e23018f0bc387546631c935e1677218ae63546e47fc2666234199"
+            url: "https://github.com/reyeahit/Glamarm/releases/download/v1.0.9/GlamarmRobotSDK.xcframework.zip",
+            checksum: "a95db33f81ad7a951f18c90e46eff7f8f09ca31d33ade221c1decde4e5a7c4be"
         ),
         .target(
             name: "GlamarmRobotSDKDependencies",
