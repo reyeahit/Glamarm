@@ -11,4 +11,4 @@ This package exposes the closed-source `GlamarmRobotSDK` as a binary Swift Packa
 
 ## Add via SPM
 In Xcode: File -> Add Packages -> paste the repo URL:
-`https://github.com/wujian1992/GlamarmRobotSDK`
+`https://github.com/reyeahit/Glamarm`
